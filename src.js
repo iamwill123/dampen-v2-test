@@ -6,7 +6,7 @@
  * @param {Function} actionCreator - The Redux action creator to debounce
  * @returns {Function} - The new debounced function
  */
-const debounceActionCreator = (wait, actionCreator) => {
+const dampen = (wait, actionCreator) => {
   let timeoutId = null;
 
   const debounced =
@@ -24,4 +24,4 @@ const debounceActionCreator = (wait, actionCreator) => {
   return debounced;
 };
 
-module.exports = debounceActionCreator;
+module.exports = dampen;
